@@ -46,5 +46,13 @@
       chdir: /tmp/
       executable: /bin/bash
 
-  
+  - name: Copiando imagem para o servidor remoto
+    copy:
+      src: ansible.png
+      dest: /tmp
+
+
+  - name: Executar o curl 
+    shell: curl -X POST -F "file=@/tmp/ansible.png" http://{{ansible_host}}:5000/minio-upload/instruct-silas/ansible.png
+
 
