@@ -9,6 +9,25 @@
       src: minio_uploader
       dest: /tmp/
  
+  - name: Atualizando pacotes
+    apt: 
+      update_cache: yes
+ 
+  - name: Install a list of packages
+    apt:
+      pkg:
+      - python3
+      - python3-pip
+      - expect
+
+  - name: install pipenv
+    shell: pip3 install pipenv 
+
+  - name: deploy
+    shell: pipenv --python 3 install --system --deploy 
+    args:
+      chdir: /tmp/minio_uploader/
+
   
 
 
