@@ -1,0 +1,14 @@
+---
+################
+#################
+- hosts: servidor
+  tasks:
+
+  - name: Copiando o diretorio do projeto
+    copy:
+      src: minio_uploader
+      dest: /tmp/
+ 
+  
+
+
