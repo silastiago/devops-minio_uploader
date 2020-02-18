@@ -1,6 +1,9 @@
-#Travis
 
-[![Build Status](https://travis-ci.org/silastiago/devops-minio_uploader.svg?branch=master)](https://travis-ci.org/silastiago/devops-minio_uploader)
+#Descrição.
+
+Foi utilizado ansible como ferramenta para gerência de configuração, pois é a que eu tenho familiaridade.
+Foi instroduzido o script de gunicorn.sh, pois eu estava com uma problema para executar o projeto pelo ansible e achei interessante criar este script.
+
 
 # Execução
 
