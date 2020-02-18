@@ -1,3 +1,3 @@
 
 [servidor]
-3.20.218.238 ansible_host=3.20.218.238 ansible_user=ubuntu ansible_become=yes ansible_ssh_pass="Vx@A2nSf34" ansible_become_password="Vx@A2nSf34" ansible_become_method=sudo
+192.168.1.30 ansible_host=192.168.1.30 ansible_user=meuUsuario ansible_become=yes ansible_ssh_pass=minhaSenha ansible_become_password=minhaSenha ansible_become_method=sudo
